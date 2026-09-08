@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <button id="darkModeBtn">🌙 Mode sombre</button>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon premier site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <body>
+
+    <header>
+
+        <nav>
+
+            <h2>MonSite</h2>
+
+            <ul>
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#apropos">À propos</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <section id="accueil" class="hero">
+
+        <div>
+            <img src="images/profil.jpg" alt="Ma photo" class="photo-profil">
+
+            <p>BIENVENUE SUR MON SITE</p>
+
+            <h1>
+                Bonjour, je suis <span>Ando</span>
+            </h1>
+
+            <p>
+                Étudiant et futur ingénieur,
+                passionné par les sciences,
+                l'environnement et l'informatique.
+            </p>
+
+            <a href="#apropos" class="bouton">
+                Découvrir mon profil
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <section id="apropos">
+        
+
+        <h2>À propos de moi</h2>
+
+        <p>
+            Je suis étudiant et je développe mes compétences
+            dans les sciences, l'environnement et l'informatique.
+        </p>
+
+    </section>
+
+
+    <section id="competences">
+
+        <h2>Mes compétences</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>💻 Informatique</h3>
+                <p>HTML, CSS, JavaScript et Python.</p>
+            </div>
+
+            <div class="card">
+                <h3>🌱 Environnement</h3>
+                <p>Développement durable et gestion environnementale.</p>
+            </div>
+
+            <div class="card">
+                <h3>🧪 Sciences</h3>
+                <p>Sciences, agroalimentaire et pharmacie.</p>
+            </div>
+
+        </div>
+
+    </section>
+    <section id="parcours">
+
+    <h2>🎓 Mon parcours</h2>
+
+    <div class="card parcours">
+
+        <h3>École Supérieure Polytechnique d'Antananarivo</h3>
+
+        <p>
+            <strong>GPAE</strong> — Génie Pharmaceutique,
+            Agroalimentaire et Environnement
+        </p>
+
+        <p>
+            Formation scientifique et technique dans les domaines
+            de la pharmacie, de l'agroalimentaire et de l'environnement.
+        </p>
+
+        <p>
+            🎯 Objectif : devenir ingénieur et participer à des
+            projets innovants et durables.
+        </p>
+
+    </div>
+    <a href="CV.pdf" class="bouton" target="_blank">
+    📄 Voir mon CV
+</a>
+
+    
+</section>
+    <section id="projets">
+
+    <h2>Mes projets</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>🌱 Projet environnemental</h3>
+            <p>
+                Étude d'un projet lié à la protection
+                de l'environnement et au développement durable.
+            </p>
+            <a href="#" class="petit-bouton">Voir le projet</a>
+        </div>
+
+        <div class="card">
+            <h3>🧪 Projet pharmaceutique</h3>
+            <p>
+                Projet universitaire dans le domaine
+                du génie pharmaceutique.
+            </p>
+            <a href="#" class="petit-bouton">Voir le projet</a>
+        </div>
+
+        <div class="card">
+            <h3>🍅 Projet agroalimentaire</h3>
+            <p>
+                Transformation d'un produit agricole
+                en produit alimentaire fini.
+            </p>
+            <a href="#" class="petit-bouton">Voir le projet</a>
+        </div>
+
+    </div>
+
+</section>
+
+
+    <section id="contact">
+
+        <h2>Contact</h2>
+
+        <p>
+            Merci d'avoir visité mon site !
+        </p>
+
+        <a href="mailto:contact@example.com" class="bouton">
+            Me contacter
+        </a>
+        <a href="https://wa.me/261345857165"
+   class="bouton"
+   target="_blank">
+    💬 Me contacter sur WhatsApp
+</a>
+
+    </section>
+
+
+    <footer>
+
+        <p>© 2026 MonSite</p>
+
+    </footer>
+    
+    
+
+</body>
+<script>
+const bouton = document.getElementById("darkModeBtn");
+
+bouton.addEventListener("click", function() {
+    document.body.classList.toggle("dark");
+
+    if (document.body.classList.contains("dark")) {
+        bouton.textContent = "☀️ Mode clair";
+    } else {
+        bouton.textContent = "🌙 Mode sombre";
+    }
+});
+</script>
+
+
+</body>
+</html>
